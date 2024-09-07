@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bitacora 1</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+
+    <h1 id="tit">Bitacora 1</h1>
+
+    <nav>
+        <a href="#jav" data-link-alt="Javascript"><span>Javascript</span></a>
+        <a href="#dom" data-link-alt="DOM"><span>DOM</span></a>
+        <a href="#ref" data-link-alt="Referenciar con JS"><span>Referenciar con JS</span></a>
+        <a href="#pro" data-link-alt="Propiedad style"><span>Propiedad style</span></a>
+        <a href="#clas" data-link-alt="Classlist"><span>Classlist</span></a>
+        <a href="#eve" data-link-alt="Eventos"><span>Eventos</span></a>
+        <a href="#if" data-link-alt="If else"><span>If else</span></a>
+        <a href="#vie" data-link-alt="Viewport"><span>Viewport</span></a>
+        <a href="#med" data-link-alt="@Medias"><span>@Medias</span></a>
+    </nav>
+
+    <section id="principal">
+
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="jav">Notas de la clase</h1>
+                <h2>Javascript</h2>
+
+                <p>Es un lenguaje de programacion orientado a objetos, dialecto del estandar ECMAScript.
+                   Fue desarrolado originalmente por Brendan Eich de Nestcape con el nombre de Mocha, posteriormente se le nombro
+                   LiveScript, y finalmente Javascript.
+                   <p> El elemento getelementby () devuyelve el elemento que tiene el atributo ID con el valor especificado.
+                    <p>En Javascript hay <strong>variables</strong> y estas son para almacenar valores de datos. Todas las variables
+                    de Javascript deben de identificarse con nombres unicos.
+                    <p>Contiene <strong>operadores aritmeticos</strong> estos permiten realizar calculos complejos y tomar decisiones
+                    logicas en funcion de comparaciones y otros tipos de condiciones. Los operadores aritmeticos estandar son adicion o suma
+                    sustraccion o resta, multiplicacion, division, incremento (++), decremento (--).
+                </p>
+
+                </p>          
+
+            </section>
+
+            <section id="dere">
+
+                <h1>Ideas claves </h1>
+                    <ul>
+                        <li>El cambio de nombre dio la impresion de que el lenguaje es una prolongacion de java.</li>
+                        <li>Devuelve nulo si no existen elementos con el ID especificado.</li>
+                        <li>Para construir el nombre de una variable se puede utilizar estas reglas: que deben comenzar con una letra, 
+                        pueden comenzar con $ y _, pueden contener letras, digitos, guiones bajos y signos de dolar.
+                        </li>
+                    </ul>
+
+                <br> <br>
+
+                <img src="img/java.png" width="450px" height="250px" alt="Javascript">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+            <p>Podemos ver aqui como Javascript ya es otra cosa diferente el como se puede hacer mas con ellos, como podemos complicarnos o
+                facilitarnos al momento de nosotros hacer nuestra pagina web, aqui ya nos da mas herramientas, como podemos dar refrencia, agregar valores
+                y demas. 
+            </p>
+        </footer>
+
+    </section>
+
+    <section id="principal">
+
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="dom">Notas de la clase</h1>
+                <h2>DOM</h2>
+                <p>
+                    En Javascript podemos utilizar la propiedad style para manipular el estilo de un elemento HTML, o para crear uno nuevo.
+                    Para esto se debe de usar la siguiente sintaxis:
+                    <br> document.getElementByld("id").style.propiedad = "valor o nuevo valor";
+                    <p>El metodo getelementsbyclassname() devuelve una coleccion de todos los elementos en el documento con el nombre de clase
+                    especificado, como un objeto HTMLCollection (lista de elementos HTML).
+                    <p> Para poder manipular los elementos HTML con JS, primero debemos encontrarlos y se puede hacer de las siguientes formas:
+                        <ul>
+                          <li>Encontrar elementos por su id.</li>
+                          <li>Encontrar elementos por su nombre de clase.</li>
+                          <li>Encontrar elementos por su nombre de etiqueta.</li>
+                          <li>Encontrar elementos por su selector CSS.</li>
+                        </ul>
+                </p>
+
+            </section>
+
+            <section id="dere">
+                <h1>Ideas claves</h1>
+
+                <ul>
+                    <li>El metodo para encontrarlo por su id es el mas comun y se utliza cada vez que desea manipular u obtener informacion.</li>
+                    <li>Si existe mas de un elemento id especificado, el metodo devuelve el primer elemento en el codigo fuerte.</li>
+                </ul>
+
+                <img src="img/DOM.jpg" width="450px" height="250px" alt="DOM">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+
+        </footer>
+
+    </section>
+
+    <section id="principal">
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="ref">Notas de la clase</h1>
+                <h2>Referenciar con JS</h2>
+
+                <p> <b> Hay dos formas de incluir Javascript en HTML y hacer que funcionen juntos:</b>
+                <ul>
+                    <li>Agregar Javascript directamente a un archivo HTML.</li>
+                    <li>Agregar codigo Javascript en un archivo separado.</li>
+                </ul>
+                </p>
+
+                <h4> Directamente a un archivo HTML.</h4>
+                <p>
+                    Se utiliza la etiqueta <.script>.
+                    <br> Se debe colocar dentro de la etiqueta head o body.
+                    <br> Se recomienda agregarlo en head para que pueda permanacer separado del contenido HTML.
+                    <br> Colocarlo dentro del body puede ayudar a mejorar la velocidad de carga, ya que el contenido del sitio web se 
+                    cargara mas rapido.
+                </p>
+
+                <h4>Archivo Separado</h4>
+
+                <br> Los beneficios que puede tener son:
+
+                <ul>
+                    <li>La legibilidad y el mantenimiento del codigo es mucho mas facil.</li>
+                    <li>Los archivos Javascript en cach mejoran el rendimiento general del sitio web al disminuir el tiempo que tardan
+                        las paginas en cargarse.
+                    </li>
+                    <li>cuando los codigos HTML y Javascript estan separados, se cumple el principio de diseño y separacion</li>
+                </ul>
+ 
+
+            </section>
+
+            <section id="dere">
+                <h1>Ideas claves</h1>
+                <ul>
+                    <li>Se recomienda mejor la opcion de referenciar en un archivo separado.</li>
+                </ul>
+
+                <img src="img/refe.svg" width="450px" height="450px" alt="referencias">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+            <p>
+                Aqui aprendimos sobre como podemos colocar el Javascript en nuestro html y las dos diferentes opciones que tenemos, y que 
+                la mas recomendable es un archivo separado para que esta la podamos ver de una manera mas limpia y ordenada.
+            </p>
+        </footer>
+
+    </section>
+
+    <section id="principal">
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="pro">Notas de la clase</h1>
+                <h2>Propiedad Style</h2>
+
+                <p> En Javascript podemos utilizar la propiedad style para manipular el estilo de un elemento HTML, o para crear uno nuevo.
+                    Para esto se debe de usar la siguiente sintaxis:
+                    <br> document.getElementByld("id").style.propiedad = "valor o nuevo valor";
+                    <p> 
+                </p>
+
+            </section>
+
+            <section id="dere">
+                <h1>Ideas claves</h1>
+                <ul>
+                    <li>Este nos sirve para manipular el estilo en el html.</li>
+                </ul>
+
+                <br><br>
+
+                <img src="img/prop.jpg" width="450px" height="250px" alt="propiedad">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+            <p> Pudimos ver el como podemos ver cambios a partir del html, que esto lo hace mas visualmente atractivo y llamativo, que en cierta
+                manera se vea diferente y no sea tan repititivo.
+            </p>
+        </footer>
+
+    </section>
+
+    <section id="principal">
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="clas">Notas de la clase</h1>
+                <h2> Classlist</h2>
+                <p>
+                    La propiedad classlist devuelve los nombres de clase de un elemento. Esta propiedad es util para agregar, eliminar y alternar
+                    clases CSS en un elemento.
+                    <p> La propiedas classlist es de solo lectura, sin embargo, puede modificarse utilizando estos metodos:
+                        <ul>
+                            <li> <strong>add(): </strong>La propiedad classlistmas el metodo add, agrega uno o mas nombres de clase a un elemento.</li>
+                            <li> <strong>remove():</strong> La propiedad classlist mas el metodo remove elimina o uno o mas nombres de clase de un elemento</li>
+                            <li> <strong>toggle():</strong> La propiedad classlist mas el metodo toggle alterna entre un nombre de clase para un elemento.</li>
+                        </ul>
+                </p>
+
+            </section>
+
+            <section id="dere">
+                <h1>Ideas claves</h1>
+                <ul>
+                    <li>La propiedad classlist no es soportada en IE9 y versiones anteriores.</li>
+                    <li>En classlist.toggle el segundo parametro no es compatible con internet explore, opera 12 y versiones anteriores.</li>
+                </ul>
+                <br> <br> <br>
+                <img src="img/class.jpg" width="500px" height="250px" alt="classlist">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+            <p>
+                Su funcion aqui es para agregar, eliminar y alternar clases CSS.
+            </p>
+        </footer>
+
+    </section>
+
+    <section id="principal">
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="eve">Notas de la clase</h1>
+                <h2>Eventos</h2>
+                <p>
+                   En HTML DOM le permite ejecutar codigo cuando ocurre un evento.
+                   <br> El navegador genera eventos cuando "suceden cosas" a elementos HTML como por ejemplo:
+                   <ul>
+                    <li>Al hacer click con el mouse <strong>"onclick"</strong></li>
+                    <li>Al hacer doble click con el mouse <strong>"ondblclick"</strong></li>
+                    <li>Al colocar el mouse sobre un elemento <strong>"onmouseover"</strong></li>
+                    <li>Al alejar el mouse de un elemento <strong>"onmouseout"</strong></li>
+                    <li>Cuando una pagina web se ha cargado <strong>"onload"</strong></li>
+                    <li>Al presionar una tecla <strong>"onkeydown"</strong></li>
+                    <li>Al hacer scroll en la pagina <strong>"onscroll"</strong></li>
+                   </ul>
+                   <p> El metodo addventlistener() adjunta un controlador de eventos al elemento especificado. La sintaxis para este
+                    metodo es la siguiente: <strong>elemento.addventlistener(evento, funcion..)</strong>
+                </p>
+            </section>
+
+
+            <section id="dere">
+                <h1>Ejemplo</h1>
+
+                <h3> onmouseover </h3>
+                <div id="circulo" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                </div>
+
+                <script>
+                    function mouseOver() {
+                        document.getElementById("circulo").style.width = "50px";
+                    }
+                </script>
+
+                <br><br>
+
+                <img src="img/evento.png" width="550px" height="250px" alt="eventos">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+                <p>Los eventos hacen que se haga mas interactivo y a demas este modifica el cambio dependiendo de como se utilize el mouse, 
+                cada uno tiene diferentes funcionalidad y se usan de diferentes maneras.
+            </p>
+        </footer>
+
+    </section>
+
+    <section id="principal">
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="if">Notas de la clase</h1>
+                <h2>If else</h2>
+                <p>
+                    Una declaracion condicional se usa para determinar el flujo de programa basado en una condicion.
+                    <p> En Javascript tenemos las siguientes declaraciones condicionales:
+                        <ul>
+                            <li><strong>If:</strong> Si es verdadera, se ejecuta el bloque de codigo correspondiente y se salta el resto de 
+                            las condiciones.</li>
+                            <li><strong>Else:</strong> Este bloque se ejecuta si ninguna de las condiciones anteriores fue verdadera.
+                            Es opcional, pero util para manejar casos no previstos.</li>
+                            <li><strong>Else if:</strong> Si es verdadera se ejecuta su bloque de codigo y se termina la evaluacion. Si es falsa
+                             se pasa a la siguiente condicion.</li>
+                        </ul>
+                    <p> La sintaxis es: if (condicion) {
+                    <br> }
+                    <br> else {
+                    <br> }
+                    <p> Las declaraciones else if en Javascript permiten evaluar multiples condiciones secuencialmente. Esto es util cuando
+                    se tienen mas de dos posibles situaciones que manejar en el codigo.
+
+                </p>
+
+            </section>
+
+            <section id="dere">
+                <h1>Ideas claves</h1>
+                <ul>
+                    <li>Se utilizan los operadores de comparacion.</li>
+                    <li>En el if se ejecuta si es verdadera y si es falsa pasa a la siguiente condicion.</li>
+                    <li>El else if permite evualar multiples condiciones.</li>
+                </ul>
+
+                <fieldset>
+                    <legend>
+                        <h3>Ejemplo</h3>
+                    </legend>
+                    <label for="edaad">Introduce tu edad</label><br><br>
+                    <input type="text" id="edad"> <br><br>
+                    <input type="button" value="Haz click Aqui" onclick="miFuncion()">
+                    <p id="parrafo1"></p>
+
+                    <script>
+                        function miFuncion() {
+                            let edad = document.getElementById("edad").value;
+
+                            if (edad >= 18 ) {
+                                document.getElementById("parrafo1").innerText = "Eres mayor"
+                            } else {
+                                document.getElementById("parrafo1").innerText = "Eres menor"
+                            }
+                        }
+                    </script>
+                </fieldset>
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+            <p>
+                Esta condicion nos ayuda a realizar acciones al momento de declar alguna condicion y si esta no es cierta puede pasar o 
+                mandar algun comunicado de que algo podria estar mal, ayuda a tener condiciones en que si queremos que se realize una funcion
+                se pueda ejecutar por medio de un if else.
+            </p>
+        </footer>
+
+    </section>
+
+    <section id="principal">
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="vie">Notas de la clase</h1>
+                <h2>Viewport</h2>
+
+                <p>
+                    Es el area visible del usuario de una pagina web este varia segun el dispositivo y sera mas pequeña en un
+                    smarttphone que en la computadora. 
+                    <p> A traves de la etiqueta <.meta> podemos tomar el control de la ventana grafica.
+                    <br> Un elemento de vista <.meta> le da al navegador instrucciones sobre como controlar las dimensiones y la escala de la pagina.
+                    <p><strong>content = "width=device-width, initial-scale=1.0" </strong>
+                </p>
+
+            </section>
+
+
+            <section id="dere">
+                <h1>Ideas claves</h1>
+                <ul>
+                    <li>Se obtiene una experiencia pobre cuando el usuario se ve obligado a desplazarse horizontalmente.</li>
+                    <li>Es la pantalla que ve el usuario.</li>
+                    <li>Los usuarios estan acostumbrados a desplazar los sitios web verticalmente pero no horizontalmente,
+                        asi que es importante que los usuarios no tengan la necesidad de desplazarse horizontalmente.
+                    </li>
+                    
+                </ul>
+
+                <img src="img/view.png" width="400px" height="300px" alt="media">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+            <p>
+                 En esta parte conocemos la ventana grafica de la pagina web al momento que el usuario ingrese a la pagina en cualquier
+                 dispositivo, este puede variar ya que no solamente existe la ventana grafica de una computadora si no tambien de telefono y
+                 este varia su tamaño.
+            </p>
+        </footer>
+
+    </section>
+
+    <section id="principal">
+        <div id="con">
+
+            <section id="izq">
+                <h1 id="med">Notas de la clase</h1>
+                <h2>@ Media</h2>
+                <p>
+                    Estos son un modulo de CSS3 que adapta la representacion de contenido a las caracteristicas de un dispositivo.
+                    Se convirtio en un estandar recomendado por la W3C en junio de 2012 y es un principio basico del diseño web adaptativo.
+                    <p> Se utilizan para verificar varias cosas como: ancho y alto de la ventana grafica, ancho y alto del dispositivo, orientacion 
+                    del dispositivo y la resolucion.
+                    <p> El uso de media queries es una tecnica popular para entregar una hoja de estilo personalizada para:
+                        <ul>
+                            <li>Computadoras de escritorio</li>
+                            <li>Computadoras portatiles</li>
+                            <li>Tabletas</li>
+                            <li>Telefonos moviles (como los telefonos Iphone y Android) </li>
+                        </ul> 
+                    <p> <strong>Tipos de media</strong>
+                        <ul>
+                            <li>All: Se utiliza para todos los dispositivos de tipo de medios.</li>
+                            <li>Print: Utilizado para impresoras.</li>
+                            <li>Screen: Se utiliza para pantallas de ordenador, tabletas, telefonos inteligentes, etc.</li>
+                            <li>Speech: Se utiliza para lectores de pantalla que "lee" la pagina en voz alta.</li>
+                        </ul>
+                </p>
+
+            </section>
+
+            <section id="dere">
+                <h1>Ideas claves</h1>
+                <ul>
+                    <li> La idea de media queries fue de hacer que en lugar de buscar un tipo de dispositivo se analiza la capacidad del dispositivo.</li>
+                </ul>
+
+                <img src="img/media.png" width="500px" height="350px" alt="media">
+
+            </section>
+
+        </div>
+
+        <footer id="pie">
+            <h1>Resumen</h1>
+            <p>Este es uno de los conceptos importantes ya que en esta parte le daremos al usuario una mejor experiencia al poder navegar en 
+                nuestra pagina web en cualquier dispositivo, ya no habra necesidad en que si quiere abrir la pagina web a fuerzas tenga que verla
+                en una computadora para que se vea toda la informacion si no ya tendra la facilidad de abrirla en cualquier dispositivo.
+            </p>
+        </footer>
+
+    </section>
+
+</body>
+
+</html>
